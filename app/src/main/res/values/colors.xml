@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#FFEB0028</color>
+    <color name="accent_dark">#FFB3001F</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="scrim">#66000000</color>
+    <color name="scrim_strong">#99000000</color>
+    <color name="focus_ok">#FF4CD964</color>
+    <color name="focus_fail">#FFFF3B30</color>
+    <color name="rec_red">#FFE53935</color>
+    <color name="ic_launcher_background">#FF101014</color>
+    <color name="settings_bg">#FF0E0E11</color>
+    <color name="settings_card">#FF1A1A1F</color>
+    <color name="settings_text_secondary">#99FFFFFF</color>
+</resources>

@@ -1,0 +1,28 @@
+# Gradle / Android Studio
+.gradle/
+build/
+app/build/
+local.properties
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+.kotlin/
+
+# SDK-free build outputs / toolchain cache
+tools/.toolchain/
+build-nogradle/
+
+# Signing material - never commit private keys
+keystore/*.jks
+keystore/*.keystore
+keystore/*.p12
+keystore/*.properties
+!keystore/README.md
+# Shared, non-secret debug key used for reproducible sideload builds (see keystore/README.md)
+!keystore/debug.keystore
+
+# OS
+.DS_Store
+Thumbs.db

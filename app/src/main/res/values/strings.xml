@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OPCam Pro</string>
+    <string name="settings">Settings</string>
+
+    <!-- Camera screen -->
+    <string name="mode_photo">PHOTO</string>
+    <string name="mode_video">VIDEO</string>
+    <string name="mode_night">NIGHT</string>
+    <string name="mode_hdr">HDR</string>
+    <string name="mode_portrait">PORTRAIT</string>
+    <string name="mode_beauty">BEAUTY</string>
+    <string name="mode_auto">AUTO</string>
+    <string name="cd_shutter">Shutter</string>
+    <string name="cd_switch_camera">Switch camera</string>
+    <string name="cd_flash">Flash</string>
+    <string name="cd_timer">Timer</string>
+    <string name="cd_grid">Grid</string>
+    <string name="cd_settings">Settings</string>
+    <string name="cd_gallery">Gallery</string>
+    <string name="cd_snapshot">Snapshot while recording</string>
+    <string name="ev_label">EV</string>
+    <string name="processing">Processing…</string>
+    <string name="processing_percent">Processing… %1$d%%</string>
+    <string name="saved_photo">Photo saved</string>
+    <string name="saved_video">Video saved</string>
+    <string name="error_prefix">Camera: %1$s</string>
+    <string name="no_audio_permission">Recording without audio (microphone permission denied)</string>
+    <string name="lens_unavailable">Lens %1$s is not accessible on this device, using main camera</string>
+    <string name="timer_off">Timer off</string>
+    <string name="timer_seconds">%1$d s timer</string>
+    <string name="flash_off">Flash off</string>
+    <string name="flash_auto">Flash auto</string>
+    <string name="flash_on">Flash on</string>
+    <string name="flash_torch">Torch</string>
+
+    <!-- Permissions -->
+    <string name="permission_title">Camera access needed</string>
+    <string name="permission_body">OPCam Pro needs the camera to take photos and record video. Microphone access is optional and only used for video sound.</string>
+    <string name="permission_grant">Grant access</string>
+    <string name="permission_open_settings">Open app settings</string>
+
+    <!-- Settings screen -->
+    <string name="section_photo">Photo</string>
+    <string name="section_video">Video</string>
+    <string name="section_efficiency">Efficiency &amp; hardware</string>
+    <string name="section_about">About</string>
+    <string name="pref_heic">High‑efficiency photos (HEIC)</string>
+    <string name="pref_heic_summary">Hardware HEVC‑encoded stills, about half the size of JPEG at the same quality</string>
+    <string name="pref_heic_unsupported">Not supported by this camera – JPEG will be used</string>
+    <string name="pref_full_res">Full sensor resolution</string>
+    <string name="pref_full_res_summary">Use the largest size the sensor exposes (48/50/64 MP on supported OnePlus models) instead of the pixel‑binned 12 MP default</string>
+    <string name="pref_raw">Also save RAW (DNG)</string>
+    <string name="pref_raw_summary">Keeps an unprocessed sensor image next to every photo</string>
+    <string name="pref_raw_unsupported">RAW capture is not exposed by this camera</string>
+    <string name="pref_jpeg_quality">Compression quality</string>
+    <string name="pref_shutter_sound">Shutter sound</string>
+    <string name="pref_video_res">Video resolution</string>
+    <string name="pref_video_fps">Frame rate</string>
+    <string name="pref_hevc">High‑efficiency video (HEVC / H.265)</string>
+    <string name="pref_hevc_summary">About 35% smaller files than H.264 at the same quality</string>
+    <string name="pref_hevc_unsupported">No HEVC encoder found – H.264 will be used</string>
+    <string name="pref_stabilization">Video stabilisation (EIS + OIS)</string>
+    <string name="pref_power_saver">Power‑saver preview</string>
+    <string name="pref_power_saver_summary">720p preview with fast processing paths – lower battery and heat</string>
+    <string name="pref_zsl">Zero shutter lag</string>
+    <string name="pref_zsl_summary">Capture from the HAL frame buffer for instant shots</string>
+    <string name="pref_probe_lenses">Probe hidden aux lenses</string>
+    <string name="pref_probe_lenses_summary">Looks for OnePlus / Oppo auxiliary camera IDs (ultra‑wide, tele, macro) that are not advertised to third‑party apps</string>
+    <string name="pref_device_info">Camera hardware report</string>
+    <string name="pref_device_info_summary">Everything this device exposes through Camera2</string>
+    <string name="version_format">Version %1$s · zero dependencies · Camera2 + Extensions</string>
+    <string name="ok">OK</string>
+    <string name="copy">Copy</string>
+    <string name="copied">Copied to clipboard</string>
+</resources>

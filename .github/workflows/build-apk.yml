@@ -1,0 +1,37 @@
+name: Build APK
+
+on:
+  push:
+    branches: ["**"]
+    paths-ignore: ["**.md"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Cache toolchain
+        uses: actions/cache@v4
+        with:
+          path: tools/.toolchain
+          key: toolchain-${{ runner.os }}-${{ hashFiles('tools/bootstrap.sh', 'tools/stubs/**') }}
+
+      - name: Bootstrap toolchain (no Android SDK / Gradle required)
+        run: tools/bootstrap.sh
+
+      - name: Build and sign APK
+        env:
+          VERSION_CODE: ${{ github.run_number }}
+          VERSION_NAME: 1.0.${{ github.run_number }}
+        run: tools/build-apk.sh
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: OPCamPro-apk
+          path: release/*.apk
+          if-no-files-found: error

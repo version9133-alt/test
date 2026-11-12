@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settings_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+        <!-- ================= PHOTO ================= -->
+        <TextView
+            style="@style/SettingsSection"
+            android:text="@string/section_photo" />
+
+        <Switch
+            android:id="@+id/sw_heic"
+            style="@style/SettingsSwitch"
+            android:text="@string/pref_heic" />
+
+        <TextView
+            android:id="@+id/tv_heic_summary"
+            style="@style/SettingsSummary"
+            android:text="@string/pref_heic_summary" />
+
+        <Switch
+            android:id="@+id/sw_full_res"
+            style="@style/SettingsSwitch"
+            android:text="@string/pref_full_res" />
+
+        <TextView
+            android:id="@+id/tv_full_res_summary"
+            style="@style/SettingsSummary"
+            android:text="@string/pref_full_res_summary" />
+
+        <Switch
+            android:id="@+id/sw_raw"
+            style="@style/SettingsSwitch"
+            android:text="@string/pref_raw" />
+
+        <TextView
+            android:id="@+id/tv_raw_summary"
+            style="@style/SettingsSummary"
+            android:text="@string/pref_raw_summary" />
+
+        <LinearLayout style="@style/SettingsSpinnerRow">
+
+            <TextView
+                style="@style/SettingsLabel"
+                android:text="@string/pref_jpeg_quality" />
+
+            <Spinner
+                android:id="@+id/sp_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/sw_shutter_sound"
+            style="@style/SettingsSwitch"
+            android:paddingBottom="12dp"
+            android:text="@string/pref_shutter_sound" />
+
+        <!-- ================= VIDEO ================= -->
+        <TextView
+            style="@style/SettingsSection"
+            android:text="@string/section_video" />
+
+        <LinearLayout style="@style/SettingsSpinnerRow">
+
+            <TextView
+                style="@style/SettingsLabel"
+                android:text="@string/pref_video_res" />
+
+            <Spinner
+                android:id="@+id/sp_video_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/SettingsSpinnerRow">
+
+            <TextView
+                style="@style/SettingsLabel"
+                android:text="@string/pref_video_fps" />
+
+            <Spinner
+                android:id="@+id/sp_video_fps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/sw_hevc"
+            style="@style/SettingsSwitch"
+            android:text="@string/pref_hevc" />
+
+        <TextView
+            android:id="@+id/tv_hevc_summary"
+            style="@style/SettingsSummary"
+            android:text="@string/pref_hevc_summary" />
+
+        <Switch
+            android:id="@+id/sw_stabilization"
+            style="@style/SettingsSwitch"
+            android:paddingBottom="12dp"
+            android:text="@string/pref_stabilization" />
+
+        <!-- ================= EFFICIENCY ================= -->
+        <TextView
+            style="@style/SettingsSection"
+            android:text="@string/section_efficiency" />
+
+        <Switch
+            android:id="@+id/sw_power_saver"
+            style="@style/SettingsSwitch"
+            android:text="@string/pref_power_saver" />
+
+        <TextView
+            style="@style/SettingsSummary"
+            android:text="@string/pref_power_saver_summary" />
+
+        <Switch
+            android:id="@+id/sw_zsl"
+            style="@style/SettingsSwitch"
+            android:text="@string/pref_zsl" />
+
+        <TextView
+            style="@style/SettingsSummary"
+            android:text="@string/pref_zsl_summary" />
+
+        <Switch
+            android:id="@+id/sw_probe_lenses"
+            style="@style/SettingsSwitch"
+            android:text="@string/pref_probe_lenses" />
+
+        <TextView
+            style="@style/SettingsSummary"
+            android:text="@string/pref_probe_lenses_summary" />
+
+        <!-- ================= ABOUT ================= -->
+        <TextView
+            style="@style/SettingsSection"
+            android:text="@string/section_about" />
+
+        <LinearLayout
+            android:id="@+id/row_device_info"
+            style="@style/SettingsSpinnerRow"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="@string/pref_device_info"
+                android:src="@drawable/ic_info" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pref_device_info"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pref_device_info_summary"
+                    android:textColor="@color/settings_text_secondary"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_version"
+            style="@style/SettingsSummary"
+            android:paddingTop="12dp"
+            android:text="@string/version_format" />
+    </LinearLayout>
+</ScrollView>
